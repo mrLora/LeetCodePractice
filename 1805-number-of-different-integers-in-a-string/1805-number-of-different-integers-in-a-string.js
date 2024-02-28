@@ -1,0 +1,7 @@
+/**
+ * @param {string} word
+ * @return {number}
+ */
+
+
+var numDifferentIntegers = word => new Set(word.split(/[a-z]+/).filter(a => a.length).map(BigInt)).size
