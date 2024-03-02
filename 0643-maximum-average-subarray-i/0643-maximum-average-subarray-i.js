@@ -7,7 +7,8 @@
 /*
 Init a variable to store sum
 Store first k elements
-Loop through array
+Loop through array to get the next k elements
+by removing first el value from sum and adding the next el value
 Return max / k
 */
 var findMaxAverage = function(nums, k) {
@@ -15,9 +16,7 @@ var findMaxAverage = function(nums, k) {
     let sum = 0;
     // Calculate the sum of the first k elements
     for (let i = 0; i < k; i++) {
-        console.log(nums[i]);
         sum += nums[i];
-        console.log(sum);
     }
 
     let maxSum = sum;
